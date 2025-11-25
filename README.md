@@ -22,7 +22,7 @@ Laravel + Filament focado em casos reais de negócio
 
 - Cadastro de produtos (nome, descrição, preço, quantidade, categoria, tamanho)
 - Cadastro de categorias
-- Registro de pedidos (produto, quantidade, disconto, total)
+- Registro de pedidos (produto, quantidade, desconto, total)
 - Atualização automática de estoque ao registrar pedido
 - Relatório de estoque baixo
 - Relatório de vendas mensais (com gráfico)
