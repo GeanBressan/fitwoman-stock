@@ -25,11 +25,11 @@ class OrdersTable
                     ->sortable(),
                 TextColumn::make('discount')
                     ->label('Desconto')
-                    ->numeric()
+                    ->money("BRL")
                     ->sortable(),
                 TextColumn::make('total_amount')
                     ->label('Valor Total')
-                    ->numeric()
+                    ->money("BRL")
                     ->sortable(),
                 TextColumn::make('created_at')
                     ->label('Criado em')

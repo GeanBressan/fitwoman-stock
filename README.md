@@ -22,7 +22,7 @@ Laravel + Filament focado em casos reais de negócio
 
 - Cadastro de produtos (nome, descrição, preço, quantidade, categoria, tamanho)
 - Cadastro de categorias
-- Registro de pedidos (produto, quantidade, data, total)
+- Registro de pedidos (produto, quantidade, disconto, total)
 - Atualização automática de estoque ao registrar pedido
 - Relatório de estoque baixo
 - Relatório de vendas mensais (com gráfico)
@@ -35,8 +35,8 @@ Laravel + Filament focado em casos reais de negócio
 ## 🛠 Tecnologias
 
 - PHP 8.x
-- Laravel 11
-- Filament 3
+- Laravel 12
+- Filament 4.x
 - MySQL
 - Tailwind (via Filament)
 - Chart widgets do Filament
@@ -64,20 +64,3 @@ Login padrão (seed):
 Email: admin@fitwoman.test
 
 Senha: password
-
-## 📂 Estrutura principal
-- app/Models/Product.php
-
-- app/Models/Category.php
-
-- app/Models/Order.php
-
-- app/Filament/Resources/ProductResource.php
-
-- app/Filament/Resources/CategoryResource.php
-
-- app/Filament/Resources/OrderResource.php
-
-- app/Filament/Widgets/StockOverview.php
-
-- app/Filament/Widgets/MonthlySalesChart.php

@@ -34,6 +34,7 @@ class OrderForm
                     ->label('Desconto')
                     ->numeric()
                     ->prefix('R$')
+                    ->step(0.01)
                     ->default(null)
                     ->reactive()
                     ->afterStateUpdated(function (callable $set, $get) {

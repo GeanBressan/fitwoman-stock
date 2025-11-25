@@ -24,7 +24,8 @@ class ProductForm
                     ->label('Preço')
                     ->required()
                     ->numeric()
-                    ->prefix('R$'),
+                    ->prefix('R$')
+                    ->step(0.01),
                 Select::make('category_id')
                     ->label('Categoria')
                     ->relationship('category', 'name')
