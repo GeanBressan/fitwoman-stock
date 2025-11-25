@@ -26,8 +26,8 @@ class ProductsTable
                     ->sortable(),
                 TextColumn::make('category_id')
                     ->label('Categoria')
-                    ->numeric()
-                    ->sortable(),
+                    ->getStateUsing(fn ($record) => $record->category?->name)
+                    ->searchable(),
                 TextColumn::make('size')
                     ->label('Tamanho')
                     ->badge(),
@@ -37,11 +37,6 @@ class ProductsTable
                     ->sortable(),
                 TextColumn::make('created_at')
                     ->label('Criado em')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
-                TextColumn::make('updated_at')
-                    ->label('Atualizado em')
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),

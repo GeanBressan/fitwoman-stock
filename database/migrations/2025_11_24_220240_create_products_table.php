@@ -19,7 +19,7 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->decimal('price');
             $table->foreignId('category_id')->nullable()->constrained('categories');
-            $table->enum('size', ["P","M","G","XXL"]);
+            $table->enum('size', ["P","M","G","XXL"])->nullable();
             $table->integer('stock_quantity');
             $table->timestamp('created_at');
             $table->timestamp('updated_at')->nullable();
