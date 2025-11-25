@@ -1,9 +1,9 @@
 <p align="center"><a href="#" target="_blank"><img src="./public/images/fit-woman-logo.png" width="400" alt="FitWoman Logo"></a></p>
 
-![GitHub repo size](https://img.shields.io/github/repo-size/GeanBressan/codehub)
-![GitHub last commit](https://img.shields.io/github/last-commit/GeanBressan/codehub)
-![GitHub issues](https://img.shields.io/github/issues/GeanBressan/codehub)
-![GitHub contributors](https://img.shields.io/github/contributors/GeanBressan/codehub)
+![GitHub repo size](https://img.shields.io/github/repo-size/GeanBressan/fitwoman-stock)
+![GitHub last commit](https://img.shields.io/github/last-commit/GeanBressan/fitwoman-stock)
+![GitHub issues](https://img.shields.io/github/issues/GeanBressan/fitwoman-stock)
+![GitHub contributors](https://img.shields.io/github/contributors/GeanBressan/fitwoman-stock)
 
 ![Made with Laravel](https://img.shields.io/badge/Made%20with-Laravel-red?style=for-the-badge&logo=laravel)
 ![Made with PHP](https://img.shields.io/badge/Made%20with-PHP-blue?style=for-the-badge&logo=php)
@@ -44,7 +44,7 @@ Laravel + Filament focado em casos reais de negócio
 ## 🚀 Como rodar o projeto
 
 ```bash
-git clone https://github.com/seu-usuario/fitwoman-stock.git
+git clone https://github.com/GeanBressan/fitwoman-stock.git
 cd fitwoman-stock
 
 cp .env.example .env
