@@ -18,7 +18,8 @@ class OrdersTable
                 TextColumn::make('product_id')
                     ->label('Produto')
                     ->numeric()
-                    ->sortable(),
+                    ->sortable()
+                    ->getStateUsing(fn ($record) => $record->product?->name),
                 TextColumn::make('quantity')
                     ->label('Quantidade')
                     ->numeric()
