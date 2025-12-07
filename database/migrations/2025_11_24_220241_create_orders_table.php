@@ -19,8 +19,8 @@ return new class extends Migration
             $table->integer('quantity');
             $table->decimal('discount')->nullable();
             $table->decimal('total_amount');
-            $table->timestamp('created_at');
-            $table->timestamp('updated_at')->nullable();
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrentOnUpdate()->nullable();
             $table->index('product_id');
             $table->index('created_at');
         });

@@ -21,8 +21,8 @@ return new class extends Migration
             $table->foreignId('category_id')->nullable()->constrained('categories');
             $table->enum('size', ["P","M","G","XXL"])->nullable();
             $table->integer('stock_quantity');
-            $table->timestamp('created_at');
-            $table->timestamp('updated_at')->nullable();
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrentOnUpdate()->nullable();
             $table->index('name');
             $table->index('category_id');
             $table->index('stock_quantity');
